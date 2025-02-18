@@ -1,4 +1,6 @@
 cask "pachca" do
+  arch arm: "aarch64"
+
   version "2.5.0"
   sha256 "1d3f76baed87166344d2eedc5eaa7a76d198d08986db27d920f6627af509e90d"
 
@@ -19,9 +21,10 @@ cask "pachca" do
 
   app "Pachca.app"
 
+  uninstall quit: "com.todesktop.240607opwvcw853"
+
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
-  zap rmdir: [
-    # It's a Pachca bug.
+  zap delete: [
     "~/Library/Application Support/Caches",
     "~/Library/Application Support/Pachca",
     "~/Library/Logs/Pachca",
