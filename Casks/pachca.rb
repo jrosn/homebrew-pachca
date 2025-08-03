@@ -1,6 +1,7 @@
 cask "pachca" do
   arch arm: "aarch64"
 
+  version "1.0.0"
   sha256 "350e49a589a8524cd2abcb2f42ea4532fc4863ff1a2ec84a3690001cc0a516db"
 
   url "https://install.pachca.com/mac/dmg/arm64"
